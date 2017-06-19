@@ -1,0 +1,57 @@
+body {
+
+	margin:10px 10px 10px 10px;
+}
+
+td, p, div, td 
+{
+	font-family:verdana;
+	font-size:10px;
+}
+
+.editContainer
+{
+	display:none;
+}
+
+.editLink
+{
+	display:none;
+}
+
+.header {
+	font-weight:bold;
+}
+
+.noprint 
+{
+	display:none;	
+}
+
+.pageTitleSpacing 
+{
+	font-weight:bold;
+	font-size: 12px;
+	padding:0px 0px 10px 0px;
+}
+
+.separator
+{
+	display:none;
+}
+
+.viewCell1 
+{
+  text-align:left; 
+  width:130px; 
+  font-weight:bold;  
+  font-size: 12px;  	
+}
+
+.viewCell2
+{
+  text-align:left; 
+  width:500px;   
+  padding-right:50px;
+  font-size: 12px;    
+}
