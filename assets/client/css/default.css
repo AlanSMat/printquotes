@@ -11,9 +11,10 @@ a:hover
 }
 
 body, td, p, input, select, textarea {
-	font-family:verdana;
-	font-size:10px;
-	margin:0px 0px 0px 0px;
+    font-family:verdana;
+    font-size:14px;
+    margin:0px 0px 0px 0px;  
+    xbackground-color: #ccc;
 }
 
 p
@@ -46,23 +47,21 @@ form {
     background-color:#4A7DD6;	
 }
 
-.button 
-{
-    border:1px solid #000;
-    font-size:10px;
-    cursor:pointer;		
-    clear:both;
-    background-color:#ccc;
+.button { border:1px solid #000; 
+          font-size:14px; 
+          cursor:pointer; 
+          clear:both; 
+          padding: 5px 0px 5px 0px; width:180px; 
 }
 
-.button:hover 
-{
-    border:1px solid #000;
-    font-size:10px;
-    cursor:pointer;		
-    clear:both;
-    background-color:#fff;
+.button:hover { 
+    border:1px solid #000; 
+    font-size:14px; 
+    cursor:pointer; clear:both; 
+    background-color:#fff; 
+    padding: 5px 0px 5px 0px; width:180px; 
 }
+
 
 .buttonSpacing 
 {
