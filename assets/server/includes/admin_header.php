@@ -31,23 +31,23 @@ $_SESSION["admin_user"] = 1;
   <meta http-equiv="cache-control" content="no-cache">
   <meta http-equiv="pragma" content="no-cache">
   <style type="text/css">
-	  #<?php echo $page_id ?> {
-		  float:left;
-		  padding:2px 0px 2px 0px;
-		  width:120px;
-		  text-align:center;
-		  background-color:#ccc;
-		  color:#000;
-		  cursor:pointer;
-		  border: 1px solid #ccc;
-		  xborder-right:0px;			
-	  }
-		
-	  a.remake {
-		  color:#0000ff;
-		  text-decoration:underline;
-		  padding-left:10px;
-	  }
+      #<?php echo $page_id ?> {
+              float:left;
+              padding:4px 0px 4px 0px;
+              width:130px;
+              text-align:center;
+              background-color:#ccc;
+              color:#000;
+              cursor:pointer;
+              border: 1px solid #ccc;
+              xborder-right:0px;			
+      }
+
+      a.remake {
+              color:#0000ff;
+              text-decoration:underline;
+              padding-left:10px;
+      }
 	  
     .gradbg 
     {
@@ -88,13 +88,13 @@ $_SESSION["admin_user"] = 1;
 <body style="background-image:url(<?php echo IMAGES_URL ?>/sydney_1.jpg); background-repeat:no-repeat; background-attachment:fixed; background-position: 50% 100%; background-size: cover;">
     <div class="mainPageWidthAndHeight" align="center">   
       <div class="noprint">
-          <table cellpadding="0" cellspacing="0" border="0" width="100%" class="bannerbg">
-          <tr>
-            <td>
-                <div style="float:left;"><img src="<?php echo IMAGES_URL ?>/header-left.png" alt="" /></div>
-                <div style="float:right;"><img src="<?php echo IMAGES_URL ?>/header-right.png" alt="" /></div>
-            </td>
-          </tr>    		  
+        <table cellpadding="0" cellspacing="0" border="0" width="100%" class="bannerbg">
+            <tr>
+                <td>
+                    <div style="float:left;"><img src="<?php echo IMAGES_URL ?>/header-left.png" alt="" /></div>
+                    <div style="float:right;"><img src="<?php echo IMAGES_URL ?>/header-right.png" alt="" /></div>
+                </td>
+            </tr>    		  
         </table>
         <div class="navTopContainer">		     
           <div class="navItemTop" id="default" style="float:left;" onMouseOut="this.className='navItemTop'" onMouseOver="this.className='navItemOverTop'" onClick="document.location='<?php echo ROOT_URL ?>/admin_index.php?pageid=default'">Home</div>

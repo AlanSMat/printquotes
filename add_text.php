@@ -9,11 +9,12 @@ $a = $stmt->fetch();
 
 
 include(INCLUDES_PATH . "/admin_header.php");
+
 ?>
-<div style="margin-left:auto;margin-right:auto;">
+<div style="margin-left:auto;margin-right:auto;padding-top: 10px;">
 <form method="post" action="save_text.php">
 	<div>		
-		<textarea rows="30" cols="180" class="textBox" name="tex_text"><?php echo ereg_replace("<br />", "", $a["tex_text"]); ?></textarea>
+            <textarea rows="30" cols="157" class="textBox" name="tex_text"><?php echo str_replace("<br />", "", $a["tex_text"]); ?></textarea>
 	</div>
 	<div style="padding:10px 20px 0px 35px;">
 		<p style="padding-right:10px;"><input type="reset" value="Reset" class="button" /></p>

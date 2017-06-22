@@ -24,22 +24,22 @@ p
 
 td 
 {
-	text-align:left;	
+    text-align:left;	
 }
 
 form {
-	margin: 0px; 
-	padding: 0px;
+    margin: 0px; 
+    padding: 0px;
 }
 
 .altBgRowColor {
-	background-color:#C5D9F3;
-	height:18px;
+    background-color:#C5D9F3;
+    height:18px;
 }
 
 .bgRowColor {
-	background-color:#E6EFFB	;
-	height:18px;
+    background-color:#E6EFFB	;
+    height:18px;
 }
 
 .bannerbg 
@@ -48,10 +48,10 @@ form {
 }
 
 .button { border:1px solid #000; 
-          font-size:14px; 
-          cursor:pointer; 
-          clear:both; 
-          padding: 5px 0px 5px 0px; width:180px; 
+      font-size:14px; 
+      cursor:pointer; 
+      clear:both; 
+      padding: 5px 0px 5px 0px; width:180px; 
 }
 
 .button:hover { 
@@ -65,7 +65,7 @@ form {
 
 .buttonSpacing 
 {
-    padding:5px 0px 0px 0px;	
+    padding:10px 0px 0px 0px;	
     text-align:left;
 }
 
@@ -114,6 +114,7 @@ form {
 }
 
 .editListContainer {
+    padding-top: 10px;
     width: 400px;
 }
 
@@ -128,7 +129,7 @@ form {
     margin-right: auto;
     width: 660px;   
     text-align:center;
-    padding:20px 0px 20px 0px;
+    padding:10px 0px 20px 0px;
     xborder:1px solid #000;
 }
 
@@ -165,7 +166,7 @@ form {
 
 .homePageLayout {
 	text-align:left;
-	padding:0px 40px 0px 40px;
+	padding:10px 40px 0px 40px;
 	font-size:16px;	
 }
 
@@ -244,7 +245,7 @@ form {
 
 
 .navTopContainer {
-    padding:0px 0px 0px 0px;
+    padding:0px 0px 4px 0px;
     width:100%;
     background-color:#3591D0 !important;		
     margin:0px 0px 0px 0px;		
@@ -253,8 +254,8 @@ form {
 .navItemTop 
 {
     float:left;	
-    padding:2px 0px 2px 0px;
-    width:120px;
+    padding:4px 0px 4px 0px;
+    width:130px;
     text-align:center;
     background-color:inherit;
     color:#ffffff;
@@ -264,8 +265,8 @@ form {
 }
 
 .navItemOverTop {	
-    padding:2px 0px 2px 0px;
-    width:120px;
+    padding:4px 0px 4px 0px;
+    width:130px;
     text-align:center;
     background-color:#cccccc;
     color:#000;
@@ -275,8 +276,8 @@ form {
 }
 
 .navLeftContainer {
-    padding:0px 0px 0px 0px;
-    width:100px;
+    padding:4px 0px 4px 0px;
+    width:130px;
     background-color:inherit;		
     xborder: solid 1px #000;
     margin:0px 0px 0px 0px;	
@@ -284,8 +285,8 @@ form {
 }
 
 .navItemLeft {	
-    padding:2px 0px 2px 5px;
-    width:120px;
+    padding:4px 0px 4px 0px;
+    width:130px;
     text-align:left;
     background-color:#4A7DD6;
     color:#ffffff;
@@ -295,8 +296,8 @@ form {
 }
 
 .navItemOverLeft {	
-    padding:2px 0px 2px 5px;
-    width:120px;
+    padding:4px 0px 4px 0px;
+    width:130px;
     text-align:left;
     background-color:#cccccc;
     color:#000;
@@ -480,7 +481,7 @@ selectWidth
     padding: 2px 0px 2px 3px;    
 }
 
-.textBoxSearch
+.xtextBoxSearch
 {
     border: solid 1px #000;	
     background-color:#CCCCCC;	
