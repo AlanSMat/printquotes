@@ -207,7 +207,7 @@ $calendar = new Calendar();
       <div style="float:left;padding-left:138px;"><input type="button" value="Reset" class="button" onclick="document.location='<?php echo ROOT_URL . "/search.php?pageid=search"?>'" /></div>
       <div style="float:left;padding-left:10px;"><input type="submit" value="Search" class="button" /></div>
     </div>
-	</form>
+    </form>
 	<script type="text/javascript">	  
         //** re-populate selects
         <?php

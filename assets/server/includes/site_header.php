@@ -73,14 +73,14 @@ $_SESSION["admin_user"] = 0;
   </script>    
   <script type="text/javascript" src="<?php echo SCRIPTS_URL ?>/common.js"></script>
   <script type="text/javascript" src="<?php echo SCRIPTS_URL ?>/form_validation.js"></script>
-  <link rel="stylesheet" type="text/css" href="<?php echo CSS_URL ?>/default.css"  media="screen" />    
+  <script type="text/javascript" src="<?php echo SCRIPTS_URL ?>/jquery-3.2.1.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="<?php echo CSS_URL ?>/default.css"  media="screen" />
   <link rel="stylesheet" type="text/css" href="<?php echo CSS_URL ?>/print.css" media="print" />    
   <style type="text/css">
-      .bannerbg { background-image: url(<?php echo IMAGES_URL ?>/header-bg.png) }
+    .bannerbg { background-image: url(<?php echo IMAGES_URL ?>/header-bg.png) }
   </style>
 </head>
 <body style="background-image:url(<?php echo IMAGES_URL ?>/sydney_1.jpg); background-repeat:no-repeat; background-attachment:fixed; background-position: 50% 100%; background-size: cover;">
-  <div class="mainBodyContainer">
     <div class="mainPageWidthAndHeight" align="center">   
       <div class="noprint">
           <table cellpadding="0" cellspacing="0" border="0" width="100%" class="bannerbg">

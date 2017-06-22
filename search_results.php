@@ -127,24 +127,24 @@ else
         	<td style="text-align:center;"><?php echo $row->prq_stockgsm; ?></td>
         	<td>$<?php echo $row->prq_totalcost ?></td>  
         	<td>
-        	  <div class="editContainer">    		  
+        	  <div class="listAllLinkContainer">    		  
           	  <?php
-          	  if($_SESSION["admin_user"]) 
-          	  { 
-          	  ?>
+          	    if($_SESSION["admin_user"]) 
+          	    { 
+          	    ?>
           	  	<div class="editLink"><a href="view.php?quote_id=<?php echo $row->prq_id ?>&ut=admin">View</a></div>
                 	<div class="separator">|</div>
                 	<div class="editLink"><a href="quote_form.php?quote_id=<?php echo $row->prq_id ?>&pageid=quote_form">Edit</a></div>
-                <?php 
-          	  }
-          	  else 
-          	  {
-                ?>
+                    <?php 
+          	    }
+          	    else 
+          	    {
+                    ?>
                 	<div class="editLink"><a href="view.php?quote_id=<?php echo $row->prq_id ?>&ut=ord">View</a></div>
-                <?php 
-          	  }
-              ?>
-            </div>
+                    <?php 
+          	    }
+                    ?>
+                    </div>
         	</td>
         </tr>
       <?php 

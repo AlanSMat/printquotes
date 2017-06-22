@@ -3,15 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/wamp/www/printquotes/assets/server/classes/class.Search.php</file>
-            <file>file:/C:/wamp/www/printquotes/assets/server/includes/admin_header.php</file>
-            <file>file:/C:/wamp/www/printquotes/quote_form.php</file>
-            <file>file:/C:/wamp/www/printquotes/assets/server/includes/site_header.php</file>
-            <file>file:/C:/wamp/www/printquotes/assets/client/scripts/calc_pages.js</file>
-            <file>file:/C:/wamp/www/printquotes/assets/server/includes/test_header.php</file>
-            <file>file:/C:/wamp/www/printquotes/index.php</file>
-            <file>file:/C:/wamp/www/printquotes/search.php</file>
+            <file>file:/C:/wamp/www/printquotes/assets/client/css/default.css</file>
+            <file>file:/C:/wamp/www/printquotes/list_all_inc.php</file>
+            <file>file:/C:/wamp/www/printquotes/printers/edit_printer.php</file>
+            <file>file:/C:/wamp/www/printquotes/host_products/test_class.php</file>
+            <file>file:/C:/wamp/www/printquotes/host_products/list_host_products.php</file>
+            <file>file:/C:/wamp/www/printquotes/bindings/list_bindings.php</file>
             <file>file:/C:/wamp/www/printquotes/search_results.php</file>
+            <file>file:/C:/wamp/www/printquotes/test.php</file>
         </group>
     </open-files>
 </project-private>
