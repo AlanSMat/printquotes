@@ -2,7 +2,6 @@
 include(CLASSES_PATH . "/class.Page_list.php");
 $pdo = new PDO(DSN, USER, PASS);
 ?>
-<div style="padding-top:10px;"></div>
 <table cellpadding="5" cellspacing="1" border="0">      
   <tr>
     <td class="header" style="width:45px;">Ref</td>

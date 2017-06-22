@@ -112,4 +112,5 @@ $_SESSION["admin_user"] = 1;
       	<div class="pageTitle">
           <div class="pageTitleSpacing">&nbsp;</div>	      
       	</div>
-      </div> 
+      </div>
+      <div class="topSpacing"></div>

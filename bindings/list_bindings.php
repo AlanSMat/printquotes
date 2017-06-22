@@ -37,7 +37,7 @@ include(INCLUDES_PATH . "/admin_header.php");
         ?>
     </table>
     <div class="buttonSpacing"> 
-      <form name="hos_form" method="post" action="edit_host_product.php?pageid=host_product" id="aspnetForm">
+      <form name="hos_form" method="post" action="edit_binding.php?pageid=bindings" id="aspnetForm">
           <input type="Submit" value="Add New" class="button" />
       </form>
     </div>

@@ -114,7 +114,6 @@ form {
 }
 
 .editListContainer {
-    padding-top: 10px;
     width: 400px;
 }
 
@@ -129,7 +128,7 @@ form {
     margin-right: auto;
     width: 660px;   
     text-align:center;
-    padding:10px 0px 20px 0px;
+    padding:0px 0px 20px 0px;
     xborder:1px solid #000;
 }
 
@@ -440,6 +439,10 @@ selectWidth
 	font-weight:normal;
 	background-color:#fff;
 	text-align:right;	
+}
+
+.topSpacing {
+    padding-bottom: 10px;
 }
 
 .titleRight {

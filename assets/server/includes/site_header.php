@@ -82,24 +82,25 @@ $_SESSION["admin_user"] = 0;
 </head>
 <body style="background-image:url(<?php echo IMAGES_URL ?>/sydney_1.jpg); background-repeat:no-repeat; background-attachment:fixed; background-position: 50% 100%; background-size: cover;">
     <div class="mainPageWidthAndHeight" align="center">   
-      <div class="noprint">
-          <table cellpadding="0" cellspacing="0" border="0" width="100%" class="bannerbg">
-          <tr>
-            <td>
-                <div style="float:left;"><img src="<?php echo IMAGES_URL ?>/header-left.png" alt="" /></div>
-                <div style="float:right;"><img src="<?php echo IMAGES_URL ?>/header-right.png" alt="" /></div>
-            </td>
-          </tr>    		  
-        </table>
-		<div class="navTopContainer">		     
-		  <div class="navItemTop" id="default" style="float:left;" onMouseOut="this.className='navItemTop'" onMouseOver="this.className='navItemOverTop'" onClick="document.location='<?php echo ROOT_URL ?>/index.php?pageid=default'">Home</div>		  	      
-		  <div class="navItemTop" id="list_all" style="float:left;" onMouseOut="this.className='navItemTop'" onMouseOver="this.className='navItemOverTop'" onClick="document.location='<?php echo ROOT_URL ?>/list_all.php?pageid=list_all'">List All</div>
-		  <div class="navItemTop" id="search" style="border-right:1px outset #ccc;float:left;" onMouseOut="this.className='navItemTop'" onMouseOver="this.className='navItemOverTop'" onClick="document.location='<?php echo ROOT_URL ?>/search.php?pageid=search&ut=ord'">Search</div>
-		  <div class="clear">&nbsp;</div>
-	    </div><!-- end navTopContainer -->
-	  </div><!-- end noprint -->   
-	  <div class="pageTitleContainer">
-    	<div class="pageTitle">
-      	<div class="pageTitleSpacing">&nbsp;</div>	      
-    	</div>
-  	</div> 
+        <div class="noprint">
+            <table cellpadding="0" cellspacing="0" border="0" width="100%" class="bannerbg">
+                <tr>
+                    <td>
+                        <div style="float:left;"><img src="<?php echo IMAGES_URL ?>/header-left.png" alt="" /></div>
+                        <div style="float:right;"><img src="<?php echo IMAGES_URL ?>/header-right.png" alt="" /></div>
+                    </td>
+                </tr>    		  
+            </table>
+            <div class="navTopContainer">		     
+                <div class="navItemTop" id="default" style="float:left;" onMouseOut="this.className='navItemTop'" onMouseOver="this.className='navItemOverTop'" onClick="document.location='<?php echo ROOT_URL ?>/index.php?pageid=default'">Home</div>		  	      
+                <div class="navItemTop" id="list_all" style="float:left;" onMouseOut="this.className='navItemTop'" onMouseOver="this.className='navItemOverTop'" onClick="document.location='<?php echo ROOT_URL ?>/list_all.php?pageid=list_all'">List All</div>
+                <div class="navItemTop" id="search" style="border-right:1px outset #ccc;float:left;" onMouseOut="this.className='navItemTop'" onMouseOver="this.className='navItemOverTop'" onClick="document.location='<?php echo ROOT_URL ?>/search.php?pageid=search&ut=ord'">Search</div>
+                <div class="clear">&nbsp;</div>
+            </div><!-- end navTopContainer -->
+	</div><!-- end noprint -->   
+	<div class="pageTitleContainer">
+            <div class="pageTitle">
+                <div class="pageTitleSpacing">&nbsp;</div>	      
+            </div>
+        </div> 
+        <div class="topSpacing"></div>
