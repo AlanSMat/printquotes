@@ -28,8 +28,8 @@ $_SESSION["admin_user"] = 0;
   <style type="text/css">
 	  #<?php echo $page_id ?> {
 		  float:left;
-		  padding:2px 0px 2px 0px;
-		  width:120px;
+                  padding:4px 0px 4px 0px;
+                  width:130px;
 		  text-align:center;
 		  background-color:#ccc;
 		  color:#000;

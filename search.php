@@ -48,10 +48,12 @@ if(!$_SESSION["searchform"]) {
 
 if(isset($_SESSION["search_results"])) 
 {
-    foreach($_SESSION["search_results"] as $key => $value) 
-    {
-        $_SESSION["searchform"][$key] = $value;
-    }   
+    if(is_array($_SESSION["search_results"])) {
+        foreach($_SESSION["search_results"] as $key => $value) 
+        {
+            $_SESSION["searchform"][$key] = $value;
+        }   
+    }
 }
 
 !isset($_SESSION["searchform"]["prq_quoterecieved"]) ? $quote_date = "" : $quote_date = rt_date($_SESSION["searchform"]["prq_quoterecieved"]) ;
