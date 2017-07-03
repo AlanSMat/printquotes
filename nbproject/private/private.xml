@@ -2,16 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/C:/wamp/www/printquotes/assets/client/css/default.css</file>
-            <file>file:/C:/wamp/www/printquotes/list_all_inc.php</file>
-            <file>file:/C:/wamp/www/printquotes/assets/server/includes/admin_header.php</file>
-            <file>file:/C:/wamp/www/printquotes/index_inc.php</file>
-            <file>file:/C:/wamp/www/printquotes/assets/server/includes/site_header.php</file>
-            <file>file:/C:/wamp/www/printquotes/bindings/list_bindings.php</file>
-            <file>file:/C:/wamp/www/printquotes/search.php</file>
-            <file>file:/C:/wamp/www/printquotes/search_results.php</file>
-            <file>file:/C:/wamp/www/printquotes/add_text.php</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>

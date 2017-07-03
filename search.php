@@ -56,9 +56,11 @@ if(isset($_SESSION["search_results"]))
     }
 }
 
-!isset($_SESSION["searchform"]["prq_quoterecieved"]) ? $quote_date = "" : $quote_date = rt_date($_SESSION["searchform"]["prq_quoterecieved"]) ;
+!isset($_SESSION["searchform"]["prq_quoterecieved"]) ? $quote_date = "" : $quote_date = rt_date($_SESSION["searchform"]["prq_quoterecieved"]);
+!isset($_SESSION["searchform"]["prq_fromdate"]) ? $from_date = "" : $from_date = $_SESSION["searchform"]["prq_fromdate"];
+!isset($_SESSION["searchform"]["prq_todate"]) ? $to_date = "" : $to_date = $_SESSION["searchform"]["prq_todate"];
 
-$calendar = new Calendar();
+//$calendar = new Calendar();
 
 ?>
 <script type="text/javascript" src="<?php echo SCRIPTS_URL ?>/calc_pages.js"></script>
@@ -99,11 +101,9 @@ $calendar = new Calendar();
     }
     ?>
     <div class="form_row">
-      <div class="textSpacing">Quote Recieved Date</div>
-      <div style="float:left"><?php $calendar->input("prq_fromdate", $_SESSION["searchform"]["prq_fromdate"], "fc_from"); ?></div>
-      <div style="float:left; padding:1px 10px 0px 3px;"><?php $calendar->image("f_trigger_from"); ?></div>
-            <div style="float:left"><?php $calendar->input("prq_todate", $_SESSION["searchform"]["prq_todate"], "fc_to"); ?></div>
-      <div style="float:left; padding:1px 0px 0px 3px;"><?php $calendar->image("f_trigger_to"); ?></div>
+        <div class="textSpacing">Quote Received Date</div>
+        <div style="float:left;padding-right:10px;"><input type="text" name="prq_fromdate" readonly id="prq_fromdate" size="12" value="<?php echo $from_date ?>" class="textBox" /></div>
+        <div style="float:left"><input type="text" name="prq_todate" readonly id="prq_todate" size="12" value="<?php echo $to_date ?>" class="textBox" /></div>
     </div>
     <div class="form_row">
       <div class="textSpacing">Page Range</div>
@@ -225,12 +225,26 @@ $calendar = new Calendar();
             select_option("prq", "prq_printer",    "<?php isset($_SESSION["searchform"]["prq_printer"])    ? print $_SESSION["searchform"]["prq_printer"]    : print '' ?>");
 
             set_values(document.forms["prq"], document.forms["prq"].elements["prq_selfcover"]);
+            
+                            //** date picker
+            jQuery(function() {
+
+                var pickerOpts = {
+
+                    showOtherMonths: true,
+                    selectOtherMonths: true,
+                    dateFormat : "dd M yy"
+                    
+                }
+
+                $('#prq_fromdate').datepicker(pickerOpts);
+                $('#prq_todate').datepicker(pickerOpts);
+                
+            });
+            
         </script>
 </div>
 <?php
-$calendar->init("fc_from", "f_trigger_from");
-$calendar->init("fc_to", "f_trigger_to");
-
 unset($_SESSION["searchform"]);
 unset($_SESSION["search_results"]);
 

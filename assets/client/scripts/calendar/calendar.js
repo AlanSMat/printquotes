@@ -99,104 +99,104 @@ Calendar.is_khtml = /Konqueror|Safari|KHTML/i.test(navigator.userAgent);
 //        library, at some point.
 
 Calendar.getAbsolutePos = function(el) {
-	var SL = 0, ST = 0;
-	var is_div = /^div$/i.test(el.tagName);
-	if (is_div && el.scrollLeft)
-		SL = el.scrollLeft;
-	if (is_div && el.scrollTop)
-		ST = el.scrollTop;
-	var r = { x: el.offsetLeft - SL, y: el.offsetTop - ST };
-	if (el.offsetParent) {
-		var tmp = this.getAbsolutePos(el.offsetParent);
-		r.x += tmp.x;
-		r.y += tmp.y;
-	}
-	return r;
+    var SL = 0, ST = 0;
+    var is_div = /^div$/i.test(el.tagName);
+    if (is_div && el.scrollLeft)
+            SL = el.scrollLeft;
+    if (is_div && el.scrollTop)
+            ST = el.scrollTop;
+    var r = { x: el.offsetLeft - SL, y: el.offsetTop - ST };
+    if (el.offsetParent) {
+            var tmp = this.getAbsolutePos(el.offsetParent);
+            r.x += tmp.x;
+            r.y += tmp.y;
+    }
+    return r;
 };
 
 Calendar.isRelated = function (el, evt) {
-	var related = evt.relatedTarget;
-	if (!related) {
-		var type = evt.type;
-		if (type == "mouseover") {
-			related = evt.fromElement;
-		} else if (type == "mouseout") {
-			related = evt.toElement;
-		}
-	}
-	while (related) {
-		if (related == el) {
-			return true;
-		}
-		related = related.parentNode;
-	}
-	return false;
+    var related = evt.relatedTarget;
+    if (!related) {
+        var type = evt.type;
+        if (type == "mouseover") {
+                related = evt.fromElement;
+        } else if (type == "mouseout") {
+                related = evt.toElement;
+        }
+    }
+    while (related) {
+        if (related == el) {
+                return true;
+        }
+        related = related.parentNode;
+    }
+    return false;
 };
 
 Calendar.removeClass = function(el, className) {
-	if (!(el && el.className)) {
-		return;
-	}
-	var cls = el.className.split(" ");
-	var ar = new Array();
-	for (var i = cls.length; i > 0;) {
-		if (cls[--i] != className) {
-			ar[ar.length] = cls[i];
-		}
-	}
-	el.className = ar.join(" ");
+    if (!(el && el.className)) {
+        return;
+    }
+    var cls = el.className.split(" ");
+    var ar = new Array();
+    for (var i = cls.length; i > 0;) {
+        if (cls[--i] != className) {
+            ar[ar.length] = cls[i];
+        }
+    }
+    el.className = ar.join(" ");
 };
 
 Calendar.addClass = function(el, className) {
-	Calendar.removeClass(el, className);
-	el.className += " " + className;
+    Calendar.removeClass(el, className);
+    el.className += " " + className;
 };
 
 // FIXME: the following 2 functions totally suck, are useless and should be replaced immediately.
 Calendar.getElement = function(ev) {
-	var f = Calendar.is_ie ? window.event.srcElement : ev.currentTarget;
-	while (f.nodeType != 1 || /^div$/i.test(f.tagName))
-		f = f.parentNode;
-	return f;
+    var f = Calendar.is_ie ? window.event.srcElement : ev.currentTarget;
+    while (f.nodeType != 1 || /^div$/i.test(f.tagName))
+        f = f.parentNode;
+    return f;
 };
 
 Calendar.getTargetElement = function(ev) {
-	var f = Calendar.is_ie ? window.event.srcElement : ev.target;
-	while (f.nodeType != 1)
-		f = f.parentNode;
-	return f;
+    var f = Calendar.is_ie ? window.event.srcElement : ev.target;
+    while (f.nodeType != 1)
+        f = f.parentNode;
+    return f;
 };
 
 Calendar.stopEvent = function(ev) {
-	ev || (ev = window.event);
-	if (Calendar.is_ie) {
-		ev.cancelBubble = true;
-		ev.returnValue = false;
-	} else {
-		ev.preventDefault();
-		ev.stopPropagation();
-	}
-	return false;
+    ev || (ev = window.event);
+    if (Calendar.is_ie) {
+        ev.cancelBubble = true;
+        ev.returnValue = false;
+    } else {
+        ev.preventDefault();
+        ev.stopPropagation();
+    }
+    return false;
 };
 
 Calendar.addEvent = function(el, evname, func) {
-	if (el.attachEvent) { // IE
-		el.attachEvent("on" + evname, func);
-	} else if (el.addEventListener) { // Gecko / W3C
-		el.addEventListener(evname, func, true);
-	} else {
-		el["on" + evname] = func;
-	}
+    if (el.attachEvent) { // IE
+        el.attachEvent("on" + evname, func);
+    } else if (el.addEventListener) { // Gecko / W3C
+        el.addEventListener(evname, func, true);
+    } else {
+        el["on" + evname] = func;
+    }
 };
 
 Calendar.removeEvent = function(el, evname, func) {
-	if (el.detachEvent) { // IE
-		el.detachEvent("on" + evname, func);
-	} else if (el.removeEventListener) { // Gecko / W3C
-		el.removeEventListener(evname, func, true);
-	} else {
-		el["on" + evname] = null;
-	}
+    if (el.detachEvent) { // IE
+        el.detachEvent("on" + evname, func);
+    } else if (el.removeEventListener) { // Gecko / W3C
+        el.removeEventListener(evname, func, true);
+    } else {
+        el["on" + evname] = null;
+    }
 };
 
 Calendar.createElement = function(type, parent) {

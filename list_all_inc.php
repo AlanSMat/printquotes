@@ -68,17 +68,17 @@ $pdo = new PDO(DSN, USER, PASS);
     	    ?>
     	  	<div class="editLink"><a href="view.php?quote_id=<?php echo $row->prq_id ?>&ut=admin">View</a></div>
           	<div class="separator">|</div>
-          	<div class="editLink"><a href="quote_form.php?quote_id=<?php echo $row->prq_id ?>&pageid=quote_form">Edit</a></div>
+            	<div class="editLink"><a href="quote_form.php?quote_id=<?php echo $row->prq_id ?>&pageid=quote_form">Edit</a></div>
             <?php 
     	    }
     	    else 
     	    {
             ?>
           	<div class="editLink"><a href="view.php?quote_id=<?php echo $row->prq_id ?>">View</a></div>
-             <?php 
-    	  }
-        ?>
-        </div>
+            <?php 
+    	    }
+            ?>
+            </div>
     	</td>
     </tr>
   <?php 

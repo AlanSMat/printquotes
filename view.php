@@ -17,7 +17,7 @@ $dd_text = new DD_text();
 
 if($_SESSION["admin_user"]) 
 {
-  include(INCLUDES_PATH . "/admin_header.php");
+    include(INCLUDES_PATH . "/admin_header.php");
 }
 else 
 {

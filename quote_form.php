@@ -20,16 +20,6 @@ $a = $stmt->fetch();
 $_SESSION["quoteform"] = $a;
 
 $_SESSION["quoteform"]["prq_quoterecieved"] == 0 ? $quote_date = "" : $quote_date = rt_date($_SESSION["quoteform"]["prq_quoterecieved"]) ;
-
-$calendar = new Calendar();
-
-//$pdo_t = new PDO(DSN, USER, PASS);
-
-/*$stmt = $pdo->query("SELECT * FROM hos_hostproduct");
-while($row = $stmt->fetchObject()) {
-    echo $row->hos_hostproduct . '<br />';
-}*/
-
 ?>
 <script type="text/javascript" src="<?php echo SCRIPTS_URL ?>/calc_pages.js"></script>
 <div class = "form_container">
@@ -63,9 +53,9 @@ while($row = $stmt->fetchObject()) {
           </div>
         </div>
         <div class="form_row">
-          <div class="textSpacing">Quote Recieved *</div>
-          <div style="float:left"><?php $calendar->input("prq_quoterecieved", $quote_date); ?></div>
-          <div style="float:left; padding:1px 0px 0px 3px;"><?php $calendar->image(); ?></div>
+          <div class="textSpacing">Quote Received *</div>
+          <div style="float:left"><input type="text" name="prq_quoterecieved" readonly id="prq_quoterecieved" size="15" value="<?php echo $quote_date ?>" class="textBox" /><?php //$calendar->input("prq_quoterecieved", $quote_date); ?></div>
+          <div style="float:left; padding:1px 0px 0px 3px;"><?php //$calendar->image(); ?></div>
         </div>
         <div class="form_row">
           <div class="textSpacing">Self Cover</div>
@@ -192,6 +182,20 @@ while($row = $stmt->fetchObject()) {
             select_option("prq", "prq_coverpages",  "<?php echo $_SESSION["quoteform"]["prq_coverpages"] ?>");
             select_option("prq", "prq_binding",     "<?php echo $_SESSION["quoteform"]["prq_binding"] ?>");
             select_option("prq", "prq_printer",     "<?php echo $_SESSION["quoteform"]["prq_printer"] ?>");
+            
+            //** date picker
+            jQuery(function() {
+
+                var pickerOpts = {
+
+                    minDate    : 2,
+                    dateFormat : "dd M yy"
+                }
+
+                $('#prq_quoterecieved').datepicker(pickerOpts);
+
+            });
+            
 	</script>
 </div>
 <script type="text/javascript">
@@ -199,7 +203,7 @@ while($row = $stmt->fetchObject()) {
     document.getElementById("focus").focus();
 </script>
 <?php
-$calendar->init();
+//$calendar->init();
 /*
 if(isset($_SESSION["quoteform"]))
 {
