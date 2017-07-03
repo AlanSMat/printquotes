@@ -75,15 +75,18 @@ $_SESSION["admin_user"] = 1;
 	    link = window.open(url,"Link","toolbar=0,location=0,directories=0,status=0,menubar=0,scrollbars=0,resizable=1,width=" + width + ",height=" + height + ",left=" + left + ",top=" + top + ""); 
 	  }
 		
-  </script>    
-  <script type="text/javascript" src="<?php echo SCRIPTS_URL ?>/common.js"></script>
-  <script type="text/javascript" src="<?php echo SCRIPTS_URL ?>/form_validation.js"></script>
-  <script type="text/javascript" src="<?php echo SCRIPTS_URL ?>/jquery-3.2.1.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="<?php echo CSS_URL ?>/default.css"  media="screen" />    
-  <link rel="stylesheet" type="text/css" href="<?php echo CSS_URL ?>/print.css" media="print" />
-  <style type="text/css">
-      .bannerbg { background-image: url(<?php echo IMAGES_URL ?>/header-bg.png) }
-  </style>
+    </script>    
+    <script type="text/javascript" src="<?php echo SCRIPTS_URL ?>/common.js"></script>
+    <script type="text/javascript" src="<?php echo SCRIPTS_URL ?>/form_validation.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>    
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="<?php echo CSS_URL ?>/default.css"  media="screen" />    
+    <link rel="stylesheet" type="text/css" href="<?php echo CSS_URL ?>/print.css" media="print" />
+    <style type="text/css">
+        .bannerbg { background-image: url(<?php echo IMAGES_URL ?>/header-bg.png) }
+    </style>
 </head>
 <body style="background-image:url(<?php echo IMAGES_URL ?>/sydney_1.jpg); background-repeat:no-repeat; background-attachment:fixed; background-position: 50% 100%; background-size: cover;">
     <div class="mainPageWidthAndHeight" align="center">   

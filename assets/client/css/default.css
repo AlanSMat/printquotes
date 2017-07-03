@@ -6,8 +6,8 @@ a
 
 a:hover 
 {
-	text-decoration: none;
-	color:#666666;			
+    text-decoration: none;
+    color:#666666;			
 }
 
 body, td, p, input, select, textarea {
@@ -19,7 +19,7 @@ body, td, p, input, select, textarea {
 
 p
 {
-  float:left;
+    float:left;
 }
 
 td 
@@ -48,10 +48,10 @@ form {
 }
 
 .button { border:1px solid #000; 
-      font-size:14px; 
-      cursor:pointer; 
-      clear:both; 
-      padding: 5px 0px 5px 0px; width:180px; 
+    font-size:14px; 
+    cursor:pointer; 
+    clear:both; 
+    padding: 5px 0px 5px 0px; width:180px; 
 }
 
 .button:hover { 
@@ -129,7 +129,6 @@ form {
     width: 660px;   
     text-align:center;
     padding:0px 0px 20px 0px;
-    xborder:1px solid #000;
 }
 
 .form_row 
