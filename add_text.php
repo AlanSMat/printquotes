@@ -14,7 +14,7 @@ include(INCLUDES_PATH . "/admin_header.php");
 <div style="margin-left:auto;margin-right:auto;">
     <form method="post" action="save_text.php">
 	<div>		
-            <textarea rows="30" cols="157" class="textBox" name="tex_text"><?php echo str_replace("<br />", "", $a["tex_text"]); ?></textarea>
+            <textarea rows="30" cols="157" class="textBox" name="tex_text"><div style="text-align: center"><?php echo str_replace("<br />", "", $a["tex_text"]); ?></div></textarea>
 	</div>
 	<div style="padding:10px 20px 0px 35px;">
 		<p style="padding-right:10px;"><input type="reset" value="Reset" class="button" /></p>

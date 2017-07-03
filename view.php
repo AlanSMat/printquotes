@@ -12,13 +12,16 @@ $_REQUEST['quote_id'] = '409';
 $stmt = $pdo->query("SELECT * FROM prq_printquotes WHERE prq_id='" . $_REQUEST['quote_id'] . "'");
 $row = $stmt->fetchObject();
 
+echo $row->fetchObject();
+exit;
+
 include(CLASSES_PATH . "/class.DD_text.php");
 
 $dd_text = new DD_text();
 
 if($_SESSION["admin_user"]) 
 {
-  include(INCLUDES_PATH . "/admin_header.php");
+    include(INCLUDES_PATH . "/admin_header.php");
 }
 else 
 {
