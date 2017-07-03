@@ -6,7 +6,7 @@ $pdo = new PDO(DSN, USER, PASS);
   <tr>
     <td class="header" style="width:45px;">Ref</td>
     <td class="header" style="width:120px; text-align:center;">Host Product</td>
-    <td width="180" align="center">Product Name</td>
+    <td class="header" style="width:180px; text-align:center;">Product Name</td>
     <td class="header" style="width:40px; text-align:center;">PRN</td>
     <td class="header" style="width:70px; text-align:center;">Recieved</td>
     <td class="header" style="width:40px; text-align:center;">Total Pages</td>
