@@ -7,13 +7,8 @@ $sub_title = "View Quote";
 
 $pdo = new PDO(DSN, USER, PASS);
 
-$_REQUEST['quote_id'] = '409';
-
 $stmt = $pdo->query("SELECT * FROM prq_printquotes WHERE prq_id='" . $_REQUEST['quote_id'] . "'");
 $row = $stmt->fetchObject();
-
-echo $row->fetchObject();
-exit;
 
 include(CLASSES_PATH . "/class.DD_text.php");
 
