@@ -64,6 +64,7 @@ if(isset($_SESSION["search_results"]))
 
 ?>
 <script type="text/javascript" src="<?php echo SCRIPTS_URL ?>/calc_pages.js"></script>
+<link rel="stylesheet" type="text/css" href="<?php echo CSS_URL ?>/calendar.css" />
 <div class = "form_container">
     <form method="post" action="search_results.php" name="prq">  
 	<input type="hidden" name="quote_id" value="<?php echo $quote_id ?>" />

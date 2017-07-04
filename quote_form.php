@@ -8,8 +8,6 @@ $sub_title = "Quote Form";
 
 include(INCLUDES_PATH . "/admin_header.php");
 
-include(CLASSES_PATH . "/class.Calendar.php");
-
 isset($_REQUEST["quote_id"]) ? $quote_id = $_REQUEST["quote_id"] : $quote_id = 0;
 
 $pdo = new PDO(DSN, USER, PASS);
@@ -22,6 +20,7 @@ $_SESSION["quoteform"] = $a;
 $_SESSION["quoteform"]["prq_quoterecieved"] == 0 ? $quote_date = "" : $quote_date = rt_date($_SESSION["quoteform"]["prq_quoterecieved"]) ;
 ?>
 <script type="text/javascript" src="<?php echo SCRIPTS_URL ?>/calc_pages.js"></script>
+<link rel="stylesheet" type="text/css" href="<?php echo CSS_URL ?>/calendar.css" />
 <div class = "form_container">
     <form method="post" action="save_quote.php" name="prq">  
         <input type="hidden" name="quote_id" value="<?php echo $quote_id ?>" />
@@ -53,13 +52,12 @@ $_SESSION["quoteform"]["prq_quoterecieved"] == 0 ? $quote_date = "" : $quote_dat
           </div>
         </div>
         <div class="form_row">
-          <div class="textSpacing">Quote Received *</div>
-          <div style="float:left"><input type="text" name="prq_quoterecieved" readonly id="prq_quoterecieved" size="15" value="<?php echo $quote_date ?>" class="textBox" /><?php //$calendar->input("prq_quoterecieved", $quote_date); ?></div>
-          <div style="float:left; padding:1px 0px 0px 3px;"><?php //$calendar->image(); ?></div>
+            <div class="textSpacing">Quote Received *</div>
+            <div style="float:left"><input type="text" name="prq_quoterecieved" readonly id="prq_quoterecieved" size="15" value="<?php echo $quote_date ?>" class="textBox" /><?php //$calendar->input("prq_quoterecieved", $quote_date); ?></div>
         </div>
         <div class="form_row">
-          <div class="textSpacing">Self Cover</div>
-          <div style="float:left"><input type="checkbox" name="prq_selfcover" onclick="set_values(this.form, this)" <?php $_SESSION["quoteform"]["prq_selfcover"] == 0 ? print "" : print "checked=\"checked\"" ; ?> /></div>	
+            <div class="textSpacing">Self Cover</div>
+            <div style="float:left"><input type="checkbox" name="prq_selfcover" onclick="set_values(this.form, this)" <?php $_SESSION["quoteform"]["prq_selfcover"] == 0 ? print "" : print "checked=\"checked\"" ; ?> /></div>	
         </div>
         <div class="form_row">
           <div class="textSpacing">Page Count *</div>
@@ -188,8 +186,10 @@ $_SESSION["quoteform"]["prq_quoterecieved"] == 0 ? $quote_date = "" : $quote_dat
 
                 var pickerOpts = {
 
-                    minDate    : 2,
+                    showOtherMonths: true,
+                    selectOtherMonths: true,
                     dateFormat : "dd M yy"
+                    
                 }
 
                 $('#prq_quoterecieved').datepicker(pickerOpts);
@@ -203,12 +203,5 @@ $_SESSION["quoteform"]["prq_quoterecieved"] == 0 ? $quote_date = "" : $quote_dat
     document.getElementById("focus").focus();
 </script>
 <?php
-//$calendar->init();
-/*
-if(isset($_SESSION["quoteform"]))
-{
-  session_unset($_SESSION["quoteform"]);  
-}
-*/
 include(INCLUDES_PATH . "/admin_footer.php");
 ?>
